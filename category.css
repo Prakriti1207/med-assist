@@ -1,0 +1,64 @@
+.mainContainer{
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c8d6e5;
+}
+
+.box{
+
+    width: 50%;
+    height: auto;
+    background: #FFFFFF;
+}
+
+.modalBox{
+
+    width: 50%;
+    height: auto;
+    background: #FFFFFF;
+}
+
+.boxHeading{
+
+     width: 100%;
+    height: 20%;
+    background: #01a3a4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.textHeading{
+
+    font-size: 24px;
+    font-weight: bold;
+    color: #FFF;
+    padding: 10px
+}
+
+.btin{
+
+    display: flex;
+    justify-content: center;
+}
+
+.btnText{
+
+    width:80%;
+}
+
+.messageStyle{
+
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: mediumseagreen;
+}
+
+

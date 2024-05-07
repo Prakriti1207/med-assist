@@ -1,0 +1,75 @@
+.mainContainer{
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: #10ac84;
+    width: 100vw;
+    height: 100vh;
+}
+
+.subDiv{
+
+    width: 80%;
+    height: 80%;
+    background: #FFFFFF;
+    border: 2px solid white;
+    border-radius: 30px;
+}
+ 
+.image-stack
+
+{
+
+Display: grid;
+
+Grid-template-columns: repeat(1000, 1fr);
+
+Position: relative;
+
+}
+
+.image-stack__item—top
+
+{
+
+Grid-column: 1/span 8;
+
+Grid-row: 1; /* it must be on the same row as the second imagez*/
+
+Padding-top: 35%; /* this places the picture down and keeps it proportional.z*/
+Padding-left: 12%;
+z-index: 1; /*this renders the image on the top of the bottom photo.*/
+
+}
+
+.image-stack__item—bottom
+
+{
+
+grid-column: 4;
+
+grid-row: 1; /*this makes the image appear on the same row*/
+
+}
+
+ 
+ 
+.textHeading {
+
+    color: white;
+    font-size: 40;
+    font-weight: 600;
+    margin-bottom: 40px;
+   
+}
+
+.loginDivStyle{
+
+    background: white;
+    border-radius: 10px;
+    width:20vw;
+    height:8vh;
+    position:relative;
+    padding:8px
+}
