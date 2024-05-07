@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fdcc5396-5498-4787-875b-304c42bb0b81" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="medassist_ecom" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2Bydl213YcK0OVIQpnWQy20j2xP" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\SappalSir's_Folder\Django Projects\medassist_ecom\assets" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="medassist_ecom" type="Python.DjangoServer" factoryName="Django server">
+      <module name="medassist_ecom" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="medassist_ecom.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fdcc5396-5498-4787-875b-304c42bb0b81" name="Default Changelist" comment="" />
+      <created>1657882406015</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657882406015</updated>
+      <workItem from="1657882408052" duration="1871000" />
+      <workItem from="1657884813494" duration="24000" />
+      <workItem from="1658031135551" duration="21000" />
+      <workItem from="1658040873980" duration="762000" />
+      <workItem from="1658131218040" duration="649000" />
+      <workItem from="1658145793328" duration="297000" />
+      <workItem from="1658216734964" duration="2537000" />
+      <workItem from="1658221245574" duration="1512000" />
+      <workItem from="1658226489659" duration="3802000" />
+      <workItem from="1658311005113" duration="10589000" />
+      <workItem from="1658376356261" duration="1662000" />
+      <workItem from="1658405958244" duration="3628000" />
+      <workItem from="1658411269789" duration="496000" />
+      <workItem from="1658497727888" duration="820000" />
+      <workItem from="1658516848664" duration="140000" />
+      <workItem from="1658517328678" duration="482000" />
+      <workItem from="1658745976617" duration="2004000" />
+      <workItem from="1658832249445" duration="4723000" />
+      <workItem from="1658926565041" duration="1305000" />
+      <workItem from="1658941700191" duration="3620000" />
+      <workItem from="1658981665304" duration="5651000" />
+      <workItem from="1659009311188" duration="5084000" />
+      <workItem from="1659018978005" duration="9371000" />
+      <workItem from="1659034553844" duration="1173000" />
+      <workItem from="1659035787327" duration="1768000" />
+      <workItem from="1659037986145" duration="319000" />
+      <workItem from="1659067645336" duration="26624000" />
+      <workItem from="1659155119818" duration="21000" />
+      <workItem from="1659157460875" duration="14320000" />
+      <workItem from="1659260256819" duration="5162000" />
+      <workItem from="1659350994440" duration="2726000" />
+      <workItem from="1659360994268" duration="13085000" />
+      <workItem from="1659412940221" duration="785000" />
+      <workItem from="1659436158683" duration="5583000" />
+      <workItem from="1659464248452" duration="1151000" />
+      <workItem from="1659500701472" duration="167000" />
+      <workItem from="1659523303410" duration="1610000" />
+      <workItem from="1659552948080" duration="2305000" />
+      <workItem from="1659586111170" duration="17000" />
+      <workItem from="1659619420232" duration="756000" />
+      <workItem from="1659620302921" duration="2546000" />
+      <workItem from="1659627794369" duration="8213000" />
+      <workItem from="1660138357924" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
