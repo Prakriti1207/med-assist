@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="/static/LoginPageCss.css" rel="stylesheet">
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ 
+    <title>Login Page</title>
+</head>
+<body>
+    <form action="/checklogin" method="post"> {% csrf_token %}
+    <div class="mainContainer">
+        <div class="subDiv">
+         
+            <div class="row">
+                <div class="input-field col s7">
+                    <div class="image-stack">
+
+                        <div class="image-stack__item image-stack__item—top">
+                        
+                        <img src="/static/mobile.png" alt="mobile-img" width="350" style="border-left: 2px solid #10ac84;border-bottom:2px solid #10ac84;border-radius: 10px;">
+ 
+                        </div>
+                        
+                        <div class="image-stack__item image-stack__item—bottom">
+                        
+                        <img src="/static/wave.png" alt="wave-img" width="400" >
+                        
+                        </div></div>
+                </div>
+                <div class="input-field col s5"> 
+                    <div style="margin-top:50px;">
+                    <div style="margin-left: 120px;">
+                        <img src="/static/logo.png" alt="logo-img" width="80">
+                    </div>
+
+                    <div style="font-weight:600;font-size: 35px;margin-left: 80px;margin-top:10px">
+                        WELCOME
+                    </div>
+
+                    <div class="loginDivStyle" style="background: white;border-radius: 10px;width:20vw;height:8vh;position:relative;padding:8px;">
+                        <i class="material-icons prefix">email</i>
+                        <input required id="emailid" type="text" class="validate" name="emailid">
+                        <label for="emailid">EmailId/Mobileno.</label>
+                    </div>
+
+                    <div class="loginDivStyle" style="background: white;border-radius: 10px;width:20vw;height:8vh;position:relative;padding:8px;margin-top: 40px;margin-bottom: 50px;">
+                        <i class="material-icons prefix">lock</i>
+                        <input required id="password" type="password" class="validate" name="password">
+                        <label for="password">Password</label>
+                    </div>
+
+                   <div style="margin-top:20px;margin-left:10px;">
+                    <button class="btn waves-effect waves-light" style="width: 20vw;margin-top:10px"  type="submit" name="action" id="action">Login
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+
+                    <div style="font-size:10;font-weight:bold;color:red;margin-top:20px;margin-left: 10px;">
+                        {{message}}
+                    </div>
+                    
+                </div>
+            </div>
+            </div>   
+        </div>
+    </div>
+</form>
+</body>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+</html>

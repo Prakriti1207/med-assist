@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="/static/dashboard.css">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="/assets/" type="text/css"> -->
+  <title>Admin Dashboard</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+ 
+  <input type="checkbox" class="menu__checkbox" id="sideview-crawl">
+  <div class="side-view">
+    <nav class="admin-view__menu">
+      <div class="admin-view__header">
+        <h3 class="company-name">
+          <span>Getmeds</span>
+        </h3>
+        <div class="menu-icon">
+          <label for="sideview-crawl" class="menu-bar">
+            <svg>
+              <use xlink:href='./icons.svg#icon-menu'></use>
+            </svg>
+          </label>
+        </div>
+      </div>
+      <div class="user-profile">
+        <img src="/static/Harsh Shukla.jpeg" alt="admin-picture">
+        <h3 class="admin-name">
+          <span>Harsh Shukla</span>
+        </h3>
+      </div>
+      <ul class="side-nav">
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/loginpage"><span>Home</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/categoryinterface"><span>Category Interface</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/displaycategory"><span>Display Category</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/subcategoryinterface"><span>Sub Category
+              Interface</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/displaysubcategory"><span>Display Sub
+              Category</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/brandinterface"><span>Brand Interface</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/displaybrand"><span>Display Brand</span></a>
+        </li>
+        <li class="side-nav__orders">
+          <a style="display:flex;justify-content:center" href="/productinterface"><span>Product Interface</span></a>
+        </li>
+        <li class="side-nav__orders" style="margin-top:0px;">
+          <a style="display:flex;justify-content:center" href="/displayproduct"><span>Display Product</span></a>
+        </li>
+      </ul>
+    </nav><br>
+
+    <footer class="footer" style="  margin-top: 10px;">
+      <p>&copy; Getmeds Corporation by Harsh Shukla</p>
+    </footer>
+  </div>
+
+  <!-- MAIN --->
+  <main class="main main-content">
+    <div class="header">
+      <h1>Welcome back, Harsh Shukla 😎</h1>
+      <p>Time</p>
+    </div>
+
+    <div class="overview-cards">
+      <div class="card product-card">
+        <div class="title">
+          <h2>State</h2>
+        </div>
+        <span class="content product-content">
+          <svg>
+            <use xlink:href='./icons.svg#icon-package'></use>
+          </svg>
+          <div class="number">
+            <h4>6</h4>
+          </div>
+        </span>
+      </div>
+      <div class="card user-card">
+        <div class="title">
+          <h2>City</h2>
+        </div>
+        <span class="content user-content">
+          <svg>
+            <use xlink:href='./icons.svg#icon-user'></use>
+          </svg>
+          <div class="number">
+            <h4>18</h4>
+          </div>
+        </span>
+      </div>
+      <div class="card order-card">
+        <div class="title">
+          <h2>Product</h2>
+        </div>
+        <span class="content order-content">
+          <svg>
+            <use xlink:href='./icons.svg#icon-briefcase'></use>
+          </svg>
+          <div class="number">
+            <h4>2,00,000</h4>
+          </div>
+        </span>
+      </div>
+    </div>
+  </main>
+ 
+</body>
+
+</html>

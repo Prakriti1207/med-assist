@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="/static/displayCategory.css" rel="stylesheet">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Category</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src=
+                    "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.tooltipped').tooltip();
+        });
+    </script>
+
+</head>
+<body>
+<div class="mainContainer">
+    <div class="box">
+        <div class="boxHeading">
+            <span style="color:red;display: flex;width: 15vw;justify-content: flex-start;"><a style="color: #FFFFFF" data-tooltip="Category Interface">
+                <i class="material-icons prefix">add_box</i></a></span>
+            <div class="textHeading" style="width:30vw; ">Display Category</div>
+        </div>
+
+        <table class="striped">
+            <thead>
+            <tr>
+                <th>Category Id</th>
+                <th>Category Name</th>
+                <th>Category Icon</th>
+                <th>Update</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            {% for row in records %}
+                <tr>
+                    <td>{{ row.categoryid }}</td>
+                    <td>{{ row.categoryname }}</td>
+                    <td><img src="/static/{{ row.categoryicon }}" width="40" categoryicon="{{ row.categoryicon }}" categoryid="{{ row.categoryid }}"
+                             class='imgbtn'></td>
+                    <td><a class="waves-effect waves-light btn modal-trigger editdeletebtn" cid="{{ row.categoryid }}"
+                           cname="{{ row.categoryname }}" href="#modal1">Edit/Delete</a></td>
+                </tr>
+            {% endfor %}
+            <tr>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+
+
+        <input type="hidden" id="categoryid" name="category_id"/>
+
+        <div class="modalBox">
+            <div class="boxHeading">
+                <div class="textHeading">Category Interface</div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s12">
+                    <div class="input-field">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input required id="categoryname" type="text" class="validate" value="" name="category_name">
+                        <label for="categoryname">Category Name</label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-field btin">
+                        <button class="btn waves-effect waves-light btnText" type="button" id="editbtn" name="action"
+                                id="action">Edit
+                            <i class="material-icons right">edit</i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="col s6">
+                    <div class="input-field btin">
+                        <button class="btn waves-effect waves-light btnText delbtn" type="button" name="action"
+                                id="action">Delete
+                            <i class="material-icons right">delete</i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+                        <!-- <div class="row">
+                            <div class="col s12">
+                                <span class="messageStyle" id="message"></span>
+                            </div>
+                        </div> -->
+
+            <div class="modal-footer">
+                <a href="#!" class=" waves-effect waves-green btn-flat btnclose">Close</a>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Modal Structure for picture -->
+<div id="modal2" class="modal" style="width: 500px">
+    <div class="modal-content">
+        <div style="display: flex;justify-content: center;">
+            <input type="hidden" id="icon_cid" />
+            <img id="icon" width="350" height="150" />
+        </div>
+        <br>
+        <div><b>Select New Picture:</b></div>
+
+        <div class="file-field input-field">
+            <div class="btn">
+                <span>Category Icon</span>
+                <input required type="file" id="newicon" name="category_icon">
+            </div>
+            <div class="file-path-wrapper">
+                <input required class="file-path validate" type="text">
+            </div>
+        </div>
+
+
+        <div class="input-field btin">
+            <button style="width: 100%;" class="btn waves-effect waves-light btnText iconbtn" type="button"
+                    name="action"
+                    id="action">Edit Icon
+                <i class="material-icons right ">edit</i>
+            </button>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class=" waves-effect waves-green btn-flat btniconclose">Close</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+<!-- Jquery.com -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#modal1').modal();
+        $('#modal2').modal();
+        $('#categoryname').val(' ')
+        $('.editdeletebtn').click(function () {
+            //  alert('hello') 
+            $('#message').html("")
+            $('#categoryname').val($(this).attr('cname'))
+            $('#categoryid').val($(this).attr('cid'))
+
+        })
+        $('#editbtn').click(function () {
+            //  alert( JSON.stringify($('#categoryname').val())) 
+            $.getJSON('http://localhost:8000/editcategory', {
+                categoryid: $('#categoryid').val(),
+                categoryname: $('#categoryname').val()
+            }, function (data) {
+                if (data.result) {
+                    swal("Record updated successfully", "", "success", {
+                        timer: 1500,
+                    });
+
+                } else {
+                    swal("Fail to update the record", "", "error", {
+                        timer: 1500,
+                    });
+                }
+            })
+
+
+        })
+
+        $('.delbtn').click(function () {
+            //  alert( JSON.stringify($('#categoryname').val())) 
+            $.getJSON('http://localhost:8000/deletecategory', {
+                categoryid: $('#categoryid').val()
+            }, function (data) {
+
+
+                if (data.result) {
+                    swal("Record deleted successfully", "", "success", {
+                        timer: 1500,
+                    });
+
+                } else {
+                    swal("Fail to delete the record", "", "error", {
+                        timer: 1500,
+                    });
+                }
+
+            })
+
+
+        })
+
+        $('.btnclose').click(function () {
+
+            $('#modal1').modal('close')
+            window.location.reload('http://localhost:8000/displaycategory');
+        })
+
+
+        $('.btniconclose').click(function () {
+
+            $('#modal2').modal('close')
+            window.location.reload('http://localhost:8000/displaycategory');
+        })
+
+
+        $('.imgbtn').click(function () {
+            $('#icon_cid').val($(this).attr('categoryid'))
+            $('#modal2').modal('open')
+            $('#icon').attr('src', `/static/${$(this).attr('categoryicon')}`)
+        })
+
+        $('.iconbtn').click(function () {
+
+            var formData = new FormData()
+            formData.append('categoryid',$('#icon_cid').val())
+            var file = $('#newicon')[0].files
+            if (file.length > 0)
+                formData.append('categoryicon', file[0])
+
+            $.ajax({
+
+                url:'/editcategoryicon',
+                headers:{
+                    'X-CSRFToken':'{{ csrf_token }}'
+                },
+                type:'post',
+                data:formData,
+                contentType:false,
+                processData:false,
+                success:function(response){
+
+                    if(response!=0){
+                       swal("Icon updated successfully", "", "success", {
+                        timer: 1500,
+                    });
+
+
+                    }
+                    else
+                    {
+                       swal("Fail to update the icon", "", "error", {
+                        timer: 1500,
+                    });
+
+                    }
+                }
+            })
+        })
+
+    });
+
+</script>
+
+</html>
