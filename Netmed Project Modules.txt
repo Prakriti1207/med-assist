@@ -1,0 +1,59 @@
+Projects
+========
+1] IOT based Smart Electricity System for Home
+
+2] E-commerce website
+   Medical Website
+   Data Science
+
+3] Vehicle Tracking System
+
+4] MM(Material Management)
+
+
+
+
+Project NO.2
+============
+
+Categories
+==========
+categoryid  pk
+categoryname
+categoryicon
+
+SubCategory
+===========
+categoryid  fk
+subcategoryid  pk
+subcategoryname
+subcategoryicon
+
+Brand
+=====
+categoryid  fk
+subcategoryid  fk
+brandid     pk
+brandname
+contactperson
+mobileno
+status(top,trending,popular,discontinue)
+brandlogo
+
+Products
+========
+productid  pk
+categoryid
+subcategoryid
+brandid
+productname
+price
+offerprice
+packingtype  DD (box,packet,bottle)
+qty
+status  DD (top-selling,trending,best-seller,discontinue)
+rating
+salestatus (continue/discontinue)
+image
+
+
